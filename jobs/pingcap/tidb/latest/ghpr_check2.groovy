@@ -17,7 +17,9 @@ pipelineJob('pingcap/tidb/ghpr_check2') {
             triggers {
                 ghprbTrigger {
                     cron('H/5 * * * *')
-                    gitHubAuthId('8b25795b-a680-4dce-9904-89ef40d73159') // tidb-ci-bot.
+                    // gitHubAuthId('8b25795b-a680-4dce-9904-89ef40d73159') // tidb-ci-bot.
+                    gitHubAuthId('d6d1cb43-0e7f-4967-8891-f4eeac0c661d')
+
                     
                     // triggerPhrase('.*/(merge|run-(all-tests|check[-_]dev[-_]?2))')
                     // onlyTriggerPhrase(false)
